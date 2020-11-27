@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>问卷调查表</title>
+</head>
+
+<body>
+    <h2 align=center>问卷调查表</h2>
+    <form method=post action=>
+        姓名：<input type=text size=8 name=”xm”>
+        所在省分：<select name=”sh”>
+            <option value=”” selected>请选择…</option>
+            <option value=”北京”>北京</option>
+            <option value=”陕西”>陕西</option>
+            <option value=”山东”>山东</option>
+            <option value=”山西”>山西</option>
+        </select><br>
+        1．你从什么地方看到过我公司的产品：<br>
+        <input type=checkbox value=”报纸” name=”wherefrom”>报纸
+        <input type=checkbox value=”互联网” name=”wherefrom”>互联网
+        <input type=checkbox value=”电视” name=”wherefrom”>电视
+        <input type=checkbox value=”朋友介绍” name=”wherefrom”>朋友介绍
+        <input type=checkbox value=”其他” name=”wherefrom”>其他<br>
+        2．你对我公司的产品的满意度：<br>
+        < input type=radio value=”满意” name=”fell”>满意
+            < input type=radio value=”比较满意” name=”fell”>比较满意
+                < input type=radio value=”不满意” name=”fell”>不满意
+                    < input type=radio value=”很不满意” name=”fell”>很不满意<p>
+                            < input type=submit value=”提交问卷”>
+                                < input type=reset value=”重填”>
+    </form>
+</body>
+
+</html>
