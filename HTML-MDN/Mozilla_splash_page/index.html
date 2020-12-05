@@ -1,3 +1,10 @@
+<!--
+  css插入在<head></head>中间
+  <link href="styles/style.css" rel="stylesheet">
+  js 插入在 </body>前面
+  <script src="scripts/main.js" defer></script>
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,11 +15,14 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700"
       rel="stylesheet"
     />
+
+    <!-- 此处插入一个css-->
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <h1>Mozilla</h1>
+
       <!-- 插入 <img> 元素，链接至较小的 Firefox 标志。 -->
       <img src="images/firefox-logo120.png" alt="Firefox logo" />
     </header>
@@ -20,6 +30,7 @@
     <main>
       <article>
         <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
+        <!-- 此处B站给的嵌入链接有时候不带https:，别忘了自己加上。-->
         <iframe
           width="400"
           height="225"
@@ -46,6 +57,7 @@
         </p>
       </article>
 
+      <!-- 以下是响应式图片的实操。-->
       <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
@@ -87,6 +99,7 @@
         <div class="clearfix"></div>
       </div>
 
+      <!-- 再来一个响应式图片呗~-->
       <div class="red-panda">
         <!-- 插入照片元素 -->
         <picture>
@@ -100,10 +113,3 @@
     </main>
   </body>
 </html>
-
-<!--
-  css插入在<head></head>中间
-  <link href="styles/style.css" rel="stylesheet">
-  js 插入在 </body>前面
-  <script src="scripts/main.js" defer></script>
--->
